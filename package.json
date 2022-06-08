@@ -1,0 +1,26 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "local-library",
+  "main": "index.js",
+  "scripts": {
+    "test": "Hello World",
+    "lint": "eslint src/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwan9ilwa/local-library.git"
+  },
+  "author": "Mwangilwa Zimba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwan9ilwa/local-library/issues"
+  },
+  "homepage": "https://github.com/mwan9ilwa/local-library#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0"
+  }
+}
