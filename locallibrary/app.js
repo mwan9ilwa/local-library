@@ -12,7 +12,7 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -42,7 +42,7 @@ app.use(function(err, req, res, next) {
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb+srv://mwan9ilwa:T9mnDp3y64pJZYW@cluster0.qh6xw.mongodb.net/local-library?retryWrites=true&w=majority';
+var mongoDB = 'mongodb+srv://mwan9ilwa:T9mnDp3y64pJZYW@cluster0.qh6xw.mongodb.net/local_library?retryWrites=true&w=majority';
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
